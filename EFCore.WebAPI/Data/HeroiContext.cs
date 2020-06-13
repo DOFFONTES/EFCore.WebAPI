@@ -17,7 +17,7 @@ namespace EFCore.WebAPI.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source = DESKTOP - Q9EBMMB; Database = HeroApp; Integrated Security = True;");
+            optionsBuilder.UseSqlServer("Database = HeroApp; Integrated Security = True;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
